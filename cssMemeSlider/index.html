@@ -9,31 +9,49 @@
 <body>
     <div class="container">
         <div class="slider">
-            <div class="slider_imgs">
-                <img src="img/meme1.jpg" alt="meme1" class="slider_img">
-                <img src="img/meme2.jpg" alt="meme2" class="slider_img">
-                <img src="img/meme3.jpg" alt="meme3" class="slider_img">
-                <img src="img/meme4.png" alt="meme4" class="slider_img">
-                <img src="img/meme5.jpg" alt="meme5" class="slider_img">
+            <div class="slider_slides">
+                <div class="slider_slide">
+                    <img src="img/meme1.jpg" alt="meme1" class="slider_img">
+                </div>
+                <div class="slider_slide">
+                    <img src="img/meme2.jpg" alt="meme2" class="slider_img">
+                </div>
+                <div class="slider_slide">
+                    <img src="img/meme3.jpg" alt="meme3" class="slider_img">
+                </div>
+                <div class="slider_slide">
+                    <img src="img/meme4.png" alt="meme4" class="slider_img">
+                </div>
+                <div class="slider_slide">
+                    <img src="img/meme5.jpg" alt="meme5" class="slider_img">
+                </div>
             </div>
-            <div class="slider_footer">
-                <div class="slider_texts">
-                    <div class="slider_text">Junnie and Team Lead</div>
-                    <div class="slider_text">Sysadmin</div>
-                    <div class="slider_text">Where is a file?</div>
-                    <div class="slider_text">Computer programmer</div>
-                    <div class="slider_text">Too clever to be true</div>
+            <div class="slider_texts">
+                <div class="slider_texts_wrapper">
+                    <div class="slider_content">
+                        <div class="slider_text slider_text1">Junnie and Team Lead</div>
+                        <div class="slider_text slider_text2">Sysadmin</div>
+                        <div class="slider_text slider_text3">Where is a file?</div>
+                        <div class="slider_text slider_text4">Computer programmer</div>
+                        <div class="slider_text slider_text5">Computer programmer</div>
+                    </div>
                 </div>
-                <div class="slider_dots">
-                    <div class="slider_dot slider_dot_active"></div>
-                    <div class="slider_dot"></div>
-                    <div class="slider_dot"></div>
-                    <div class="slider_dot"></div>
-                    <div class="slider_dot"></div>
+                <div class="slider_controls">
+                    <label for="slide1" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                    <label for="slide2" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                    <label for="slide3" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                    <label for="slide4" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                    <label for="slide5" class="slider_bullet"><span class="slider_bullet_item"></span></label>
                 </div>
+            </div>
+            <div class="slider_inputs">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
             </div>
         </div>
     </div>
-    <script type="module" src="js/script.js"></script>
 </body>
 </html>
