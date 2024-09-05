@@ -20,18 +20,17 @@ p {
     background-color: rgb(104, 105, 105);
     margin: 0 auto;
     max-width: 100%;
-    padding-top: 50px;
+    padding-top: 3%;
     min-height: 100vh;
     text-align: center;
 }
 
 .slider {
-    max-width: 625px;
-    max-height: 560px;
+    max-width: 40rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     transition: transform 0.8s;
     overflow: hidden;
 }
@@ -39,6 +38,7 @@ p {
 .slider_slides {
     display: flex;
     align-items: center;
+    width: 500%;
 }
 
 .slider_slide_content {
@@ -61,6 +61,13 @@ input[type=radio] {
     height: 100%;
 }
 
+.slider_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .slider_texts_wrapper {
     overflow: hidden;
 }
@@ -68,7 +75,7 @@ input[type=radio] {
 .slider_content {
     display: flex;
     flex-flow: row nowrap;
-    max-width: 150px;
+    max-width: 9.4rem;
 }
 
 .slider_text {
@@ -91,6 +98,7 @@ input[type=radio] {
     height: 1.1em;
     background-color: transparent;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .slider_bullet_item {
@@ -98,11 +106,12 @@ input[type=radio] {
     width: 0.6em;
     height: 0.6em;
     border-radius: 0.8em;
-    background: rgba(255, 255, 255, .5);;
+    background: rgba(255, 255, 255, .5);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .slider_bullet:hover .slider_bullet_item {
-    background-color: #fff;
+    border: 0.1em solid #1f1f1f;
 }
 
 #slide1:checked ~ #texts #slider_controls label:nth-child(1) span, 
@@ -111,6 +120,15 @@ input[type=radio] {
 #slide4:checked ~ #texts #slider_controls label:nth-child(4) span, 
 #slide5:checked ~ #texts #slider_controls label:nth-child(5) span {
     background-color: #fff;
+}
+
+#slide1:checked ~ #texts #slider_controls label:nth-child(1):hover span, 
+#slide2:checked ~ #texts #slider_controls label:nth-child(2):hover span, 
+#slide3:checked ~ #texts #slider_controls label:nth-child(3):hover span, 
+#slide4:checked ~ #texts #slider_controls label:nth-child(4):hover span, 
+#slide5:checked ~ #texts #slider_controls label:nth-child(5):hover span {
+    background-color: transparent;
+    border: 0.1em solid #fff;
 }
 
 #slide1:checked ~ #texts #wrapper #content {
@@ -150,3 +168,11 @@ input[type=radio] {
 #slide5:checked ~ #slides {
     margin-left: -400%;
 }
+
+@media (max-width: 768px) {
+    #texts {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+}
+
