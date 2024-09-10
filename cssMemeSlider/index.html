@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme slider</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <div id="slides" class="slider_slides">
+                <div class="slider_slide">
+                    <img src="img/meme1.jpg" alt="meme1" class="slider_img">
+                </div>
+                <div class="slider_slide">
+                    <img src="img/meme2.jpg" alt="meme2" class="slider_img">
+                </div>
+                <div class="slider_slide">
+                    <img src="img/meme3.jpg" alt="meme3" class="slider_img">
+                </div>
+                <div class="slider_slide">
+                    <img src="img/meme4.png" alt="meme4" class="slider_img">
+                </div>
+                <div class="slider_slide">
+                    <img src="img/meme5.jpg" alt="meme5" class="slider_img">
+                </div>
+            </div>
+            <div id="texts" class="slider_texts">
+                <div id="wrapper" class="slider_texts_wrapper">
+                    <div id="content" class="slider_content">
+                        <div class="slider_text slider_text1">Junnie and Team Lead</div>
+                        <div class="slider_text slider_text2">Sysadmin</div>
+                        <div class="slider_text slider_text3">Where is a file?</div>
+                        <div class="slider_text slider_text4">Computer programmer</div>
+                        <div class="slider_text slider_text5">Too smart for the job</div>
+                    </div>
+                </div>
+                <div id="slider_controls" class="slider_controls">
+                    <label for="slide1" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                    <label for="slide2" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                    <label for="slide3" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                    <label for="slide4" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                    <label for="slide5" class="slider_bullet"><span class="slider_bullet_item"></span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
